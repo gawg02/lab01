@@ -24,8 +24,8 @@ and open the template in the editor.
             #adds the ability to add an email using
             #which email eg. work,school,home and
             #the address its self eg. example@example.ca
-            function add_email($which,$address){
-                $this->emails[$witch] = $address;
+            function add_email($which ,$address){
+                $this->emails[$whitch] = $address;
             }
             
             #adds the ability to add a grade
