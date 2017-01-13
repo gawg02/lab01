@@ -53,7 +53,7 @@ and open the template in the editor.
                 foreach($this->emails as $which=>$what)
                     $result .= $which . ': ' . $what . "\n";
                 $result .="\n";
-                return '<pre>' . $result . '<\pre>';
+                return '<pre>' . $result . '</pre>';
             }
         }
         ?>
