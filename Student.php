@@ -41,7 +41,7 @@ and open the template in the editor.
                 $total = 0;
                 foreach($this->grades as $value)
                     $total += $value;
-                return $total / count($this->grades);
+                return round($total / count($this->grades),2);
             }
             
             #prints off the students information
