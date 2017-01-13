@@ -51,7 +51,7 @@ and open the template in the editor.
                 $result = $this->first_name . '' . $this->surname;
                 $result .= ' ( ' . $this->average() . ")\n";
                 foreach($this->emails as $which=>$what)
-                    $result .= $wich . ': ' . $what . "\n";
+                    $result .= $which . ': ' . $what . "\n";
                 $result.="\n";
                 return '<pre>' . $result . '<\pre>';
             }
