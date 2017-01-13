@@ -60,6 +60,11 @@ and open the template in the editor.
         #foreach loop that prints to page all students and their average
         foreach($students as $student)
             echo $student->toString();
+        
+        #foreach loop that prints out all of the grades for each student
+        foreach ($students as $student)
+            echo $student->gradesToString();
+        
         ?>
     </body>
 </html>

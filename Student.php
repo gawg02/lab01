@@ -55,6 +55,16 @@ and open the template in the editor.
                 $result .="\n";
                 return '<pre>' . $result . '</pre>';
             }
+            
+            #prints out the grades for the student
+            function gradesToString(){
+                foreach($this->grades as $grade){
+                $result = $this->first_name . '' . $this->surname;
+                $result = ' (' . $grade . ') ' . "\n";
+                }
+                $result.="\n";
+                return '<pre>' . $result . '</pre>';
+            }
         }
         ?>
     </body>
