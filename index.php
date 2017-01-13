@@ -12,11 +12,13 @@ and open the template in the editor.
     <body>
         <?php
         // put your code here
+        #includes the Student.php page
         include('Student.php');
         echo"hello my name is Greg this is lab 1 yay!!!!";
         
         $students = array();
         
+        #create and add the first student
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -27,6 +29,7 @@ and open the template in the editor.
         $first->add_grade(55);
         $studnets['j123'] = $first;
         
+        #create and add the second student
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -38,6 +41,7 @@ and open the template in the editor.
         $second->add_grade(50);
         $student['a456'] = $second;
         
+        #create and add the third student 
         $third = new Student();
         $third->surname = "Little";
         $third->first_name = "Greg";
@@ -48,8 +52,12 @@ and open the template in the editor.
         $third->add_grade(88);
         $third->add_grade(42);
         $third->add_grade(79);
+        $student['w789'] = $third;
         
-        ksort($student);
+        #sorting function for all students
+        ksort($students);
+        
+        #foreach loop that prints to page all students and their average
         foreach($students as $student)
             echo $student->toString();
         ?>
