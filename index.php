@@ -27,7 +27,7 @@ and open the template in the editor.
         $first->add_grade(65);
         $first->add_grade(75);
         $first->add_grade(55);
-        $studnets['j123'] = $first;
+        $students['j123'] = $first;
         
         #create and add the second student
         $second = new Student();
