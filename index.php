@@ -14,8 +14,6 @@ and open the template in the editor.
         // put your code here
         #includes the Student.php page
         include('Student.php');
-        echo"hello my name is Greg this is lab 1 yay!!!!";
-        
         $students = array();
         
         #create and add the first student
@@ -34,7 +32,7 @@ and open the template in the editor.
         $second->surname = "Einstein";
         $second->first_name = "Albert";
         $second->add_email('home', 'albert@braniacs.com');
-        $second->add_email('work1','a_einstein@bcit.ca');
+        $second->add_email('work1', 'a_einstein@bcit.ca');
         $second->add_email('work2', 'albert@physics.mit.edu');
         $second->add_grade(95);
         $second->add_grade(80);
