@@ -39,7 +39,7 @@ and open the template in the editor.
         $second->add_grade(95);
         $second->add_grade(80);
         $second->add_grade(50);
-        $student['a456'] = $second;
+        $students['a456'] = $second;
         
         #create and add the third student 
         $third = new Student();
@@ -52,7 +52,7 @@ and open the template in the editor.
         $third->add_grade(88);
         $third->add_grade(42);
         $third->add_grade(79);
-        $student['w789'] = $third;
+        $students['w789'] = $third;
         
         #sorting function for all students
         ksort($students);

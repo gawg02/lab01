@@ -52,7 +52,7 @@ and open the template in the editor.
                 $result .= ' ( ' . $this->average() . ")\n";
                 foreach($this->emails as $which=>$what)
                     $result .= $which . ': ' . $what . "\n";
-                $result.="\n";
+                $result .="\n";
                 return '<pre>' . $result . '<\pre>';
             }
         }
